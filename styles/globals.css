@@ -1,0 +1,122 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* CUSTOM FONTS START */
+/*  ---- START ---- */
+
+@font-face {
+  font-family: Buda;
+  src: url("../assets/fonts/Buda/Buda-Light.ttf");
+}
+
+@font-face {
+  font-family: inspiration;
+  src: url("../assets/fonts/Inspiration/Inspiration-Regular.ttf");
+}
+
+/* CUSTOM FONTS */
+/* ---- END ---- */
+
+/* ---- START ---- */
+/* CUSTOM SCROLLBAR */
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid #171717;
+}
+
+/* CUSTOM SCROLLBAR */
+/* ----- END ----- */
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-size: 16px;
+  background: var(--background); /* fallback for old browsers */
+  color: var(--text);
+  cursor: none;
+  overflow-x: hidden;
+
+  --text: #383838;
+  --background: #fff;
+  --accent-primary: #c3b372;
+  --accent-secondary: #d9d9d9;
+}
+
+#__next {
+  max-width: 100%;
+}
+
+main {
+  background-color: var(--background);
+}
+
+footer {
+  background-color: var(--background);
+}
+
+/* CUSTOM CURSOR */
+/* ---- START ---- */
+
+.cursor {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--accent-secondary);
+  mix-blend-mode: exclusion;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  transform-origin: center;
+  transition-property: scale;
+  transition-duration: 200ms;
+  transition-delay: 100ms;
+}
+
+.cursor.hidden {
+  display: none;
+}
+
+.cursor.hover {
+  scale: 2;
+}
+
+/* CUSTOM CURSOR */
+/* ---- END ---- */
+
+@media only screen and (max-width: 750px) {
+  body {
+    font-size: 10px;
+    cursor: auto;
+  }
+}
