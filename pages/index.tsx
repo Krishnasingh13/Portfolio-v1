@@ -138,9 +138,15 @@ const Home: NextPage = () => {
                 </StaggerAnimation>
 
                 <StaggerAnimation customNumber={3}>
-                  <div className={styles.btn}>
-                    <p>Resume</p>
-                  </div>
+                  <Link
+                    href="https://drive.google.com/file/d/1jTvYQT_HBuuVV-5wr2odbPtltMmx56_j/view?usp=sharing"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <button className={styles.btn}>
+                      <p>Resume</p>
+                    </button>
+                  </Link>
                 </StaggerAnimation>
               </div>
             </div>
